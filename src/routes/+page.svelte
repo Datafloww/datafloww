@@ -3,6 +3,7 @@
     import DotBackground from '$lib/components/ui/DotBackground.svelte';
     import dashboard from "$lib/assets/dashboard.avif";
     import github from "$lib/assets/github.svg";
+    import msfs from "$lib/assets/dataflow_ms.jpg";
     import mail from "$lib/assets/mail.png";
     import AnimatedBeamMultipleInput from '$lib/components/ui/AnimatedBeamMultipleInput.svelte';
     import Team from '../lib/components/Team.svelte';
@@ -55,39 +56,42 @@
 <div class="hero z-10"> 
         <DotBackground >
         <div class="hero-content text-center animate-slidein300">
-            <div class="max-w-2xl mt-10">
+            <div class="max-w-2xl">
                 <h1 class="lg:text-4xl md:text-3xl text-2xl lg:font-bold font-semibold leading-tight lg:leading-snug">Elevate your business <span class="bg-gradient-to-r text-transparent from-[#3546ff] via-[#5aa6f8] to-blue-700 bg-clip-text">flow</span> with sharper analytics and product insights.</h1>
                 <p class="py-5 lg:text-lg text-md font-medium bg-slate-100 w-fit h-16 px-1 bg-opacity-80 rounded-xl m-auto">
                     Unlock growth with data-driven decisions and actionable insights.
                 </p>
-                <button disabled class="bg-blue-500 w-fit text-xs md:text-sm md:p-3 lg:text-base m-auto p-2 lg:4 mt-10 lg:mt-2 hover:shadow-blue-400 rounded-full duration-300 text-white hover:px-4 hover:duration-300 hover:shadow-xl animate-slidein500">Coming soon</button>
+                <button disabled class="bg-blue-500 w-fit text-lg md:text-sm md:p-3 lg:text-base m-auto p-3 mt-10 lg:mt-2 hover:shadow-blue-400 rounded-full duration-300 text-white hover:px-4 hover:duration-300 hover:shadow-xl animate-slidein500">Coming soon</button>
             </div>
         </div>
     </DotBackground>
 </div>    
 
 <div class="lg:h-[30.4rem] md:h-[30rem] h-40 relative w-full overflow-hidden bg-slate-50 animate-slidein700">
-    <img src={dashboard} alt="" class="lg:px-28 px-3 shadow-d"></div>
-<div class=" pt-20">
-    <h1 class="text-center font-semibold text-2xl lg:text-5xl">Get every <span class="bg-gradient-to-r text-transparent from-[#3546ff] via-[#5aa6f8] to-blue-700 bg-clip-text">insight</span> at one place!</h1>
+    <img src={dashboard} alt="" class="lg:px-28 px-3"></div>
+<div class=" pt-20 bg-slate-100">
+    <h1 class="text-center font-semibold text-2xl lg:text-5xl">Get every <span class="bg-gradient-to-r text-transparent from-[rgb(53,70,255)] via-[#5aa6f8] to-blue-700 bg-clip-text">insight</span> at one place!</h1>
     <AnimatedBeamMultipleInput />
 </div>
 
 
-
-<h1 class="text-center font-semibold text-3xl lg:text-4xl mb-6 " id="features">Features</h1>
-<div class="w-full grid lg:grid-cols-2 grid-cols-1 gap-y-8 mb-12 bg-dot-black/[0.4] py-12 ">
-    <Card />
+<div class="bg-dot-black/[0.4] py-8 ">
+    <h1 class="text-center font-semibold text-3xl lg:text-4xl mb-6 " id="features">Features</h1>
+    <div class="w-full grid lg:grid-cols-2 grid-cols-1 gap-y-8 ">
+        <Card />
+    </div>
 </div>
 
 
+<div class="w-full bg-gradient-to-b from-slate-50 to-slate-100 flex justify-center px-5 lg:px-44 py-10 lg:py-20 mb-5">
+    <img src={msfs} class="drop-shadow-lg" alt="">
+</div>
 
 
 <h1 class="text-center font-semibold text-3xl m-auto p-4">Our <span class="bg-gradient-to-r text-transparent from-[#3546ff] via-[#5aa6f8] to-blue-700 bg-clip-text">Team</span></h1>
-<div class="grid grid-cols-4 bg-slate-100 py-4 mb-20">
+<div class="grid grid-cols-4 py-4 mb-20">
    <Team/>
 </div>
-
 
 <div class="grid grid-cols-2 bg-slate-100 text-center text-lg border-2 border-t-gray-300 ">
     <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=datafloww.in@gmail.com">

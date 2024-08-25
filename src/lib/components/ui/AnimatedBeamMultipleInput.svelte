@@ -24,7 +24,7 @@
   <div
     bind:this={containerRef}
     class={cn(
-      "relative flex  items-center justify-center overflow-hidden` p-10 m-6 dark:shadow-[#090909]",
+      "relative flex  items-center justify-center overflow-hidden p-10 mx-6 dark:shadow-[#090909]",
       className
     )}
   >
