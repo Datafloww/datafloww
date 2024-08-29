@@ -18,6 +18,27 @@
     let div6Ref;
     let div7Ref;
     let className: any = "";
+    let tooltips = [
+    {
+			name: 'User tracking',
+			place: 'tooltip-left'
+		},
+		{
+			name: 'User behaviour',
+			place: 'tooltip-right'
+		},
+		{
+			name: 'Sharper analysis',
+			place: 'tooltip-right'
+		},
+		{
+			name: 'Product insights',
+			place: 'tooltip-right'
+		},
+		{
+			name: 'Data-driven decisions',
+			place: 'tooltip-right'
+		}]
     export { className as class };
   </script>
   
@@ -38,22 +59,14 @@
       class="flex h-full w-full flex-row justify-between gap-10 max-w-lg items-center"
     >
       <div class="flex flex-col justify-center gap-2">
-        <!-- Div 1 -->
-        
-        <!-- Div 2 -->
-       
-        <!-- Div 3 -->
-      
-        <!-- Div 4 -->
-       
-        <!-- Div 5 -->
-        <Circle>
+
+        <Circle tooltip={tooltips[0].name} tooltip_place={tooltips[0].place}>
            <img  bind:this={div5Ref} src={web}  alt="" srcset="">
         </Circle>
       </div>
       <div class="flex flex-col justify-center">
         <!-- Div 6 -->
-        <Circle>
+        <Circle tooltip=""  tooltip_place="" hidden={true}>
           <svg
             bind:this={div6Ref}
             xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +125,7 @@
       </div>
       <div class="flex flex-col justify-center">
         <!-- Div 7 -->
-        <Circle>
+        <Circle tooltip={tooltips[1].name} tooltip_place={tooltips[1].place}>
           <svg
             bind:this={div7Ref}
             xmlns="http://www.w3.org/2000/svg"
@@ -133,15 +146,15 @@
           >
         </Circle>
 
-        <Circle>
+        <Circle tooltip={tooltips[2].name} tooltip_place={tooltips[2].place}>
          <img bind:this={div1Ref} use:lazyLoad={dashboard} alt="" srcset="">
         </Circle>
 
-        <Circle>
+        <Circle tooltip={tooltips[3].name} tooltip_place={tooltips[3].place}>
           <img bind:this={div2Ref} use:lazyLoad={product} alt="" srcset="">
         </Circle>
 
-        <Circle>
+        <Circle tooltip={tooltips[4].name} tooltip_place={tooltips[4].place}>
          <img bind:this={div3Ref} use:lazyLoad={decision} alt="" srcset="">
         </Circle>
 
