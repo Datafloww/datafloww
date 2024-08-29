@@ -67,7 +67,7 @@
     </DotBackground>
 </div>    
 
-<div class="lg:h-[30.4rem] md:h-[30rem] h-40 relative w-full overflow-hidden bg-slate-50 animate-slidein700">
+<div class="lg:h-[30.4rem] md:h-[22rem] h-40 relative w-full overflow-hidden bg-slate-50 animate-slidein700">
     <img src={dashboard} alt="" class="lg:px-28 px-3"></div>
 <div class=" pt-20 bg-slate-100">
     <h1 class="text-center font-semibold text-2xl lg:text-5xl">Get every <span class="bg-gradient-to-r text-transparent from-[rgb(53,70,255)] via-[#5aa6f8] to-blue-700 bg-clip-text">insight</span> at one place!</h1>

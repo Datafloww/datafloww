@@ -36,7 +36,7 @@
 			place: 'tooltip-right'
 		},
 		{
-			name: 'Data-driven decisions',
+			name: 'Data-driven decision',
 			place: 'tooltip-right'
 		}]
     export { className as class };
@@ -45,7 +45,7 @@
   <div
     bind:this={containerRef}
     class={cn(
-      "relative flex  items-center justify-center overflow-hidden p-10 mx-6 dark:shadow-[#090909]",
+      "relative flex  items-center justify-center overflow-hidden p-10 mx-6 m-auto dark:shadow-[#090909]",
       className
     )}
   >
@@ -60,7 +60,7 @@
     >
       <div class="flex flex-col justify-center gap-2">
 
-        <Circle tooltip={tooltips[0].name} tooltip_place={tooltips[0].place}>
+        <Circle tooltip={tooltips[0].name} tooltip_place={tooltips[0].place} >
            <img  bind:this={div5Ref} src={web}  alt="" srcset="">
         </Circle>
       </div>
