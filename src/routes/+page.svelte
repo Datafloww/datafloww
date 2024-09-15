@@ -2,13 +2,11 @@
     import logo from '$lib/assets/logo.svg';
     import DotBackground from '$lib/components/ui/DotBackground.svelte';
     import dashboard from "$lib/assets/dashboard.avif";
-    import github from "$lib/assets/github.svg";
     import msfs from "$lib/assets/dataflow_ms.jpg";
-    import mail from "$lib/assets/mail.png";
     import AnimatedBeamMultipleInput from '$lib/components/ui/AnimatedBeamMultipleInput.svelte';
     import Team from '../lib/components/Team.svelte';
     import Card from '../lib/components/Card.svelte';
-    import { lazyLoad } from '$lib/utils/lazyLoad';
+    import Social from '$lib/components/Social.svelte';
 </script>
  
 
@@ -69,7 +67,7 @@
 
 <div class="lg:h-[30.4rem] md:h-[22rem] h-40 relative w-full overflow-hidden bg-slate-50 animate-slidein700">
     <img src={dashboard} alt="" class="lg:px-28 px-3"></div>
-<div class=" pt-20 bg-slate-100">
+<div class=" pt-20 bg-slate-100 overflow-hidden">
     <h1 class="text-center font-semibold text-2xl lg:text-5xl">Get every <span class="bg-gradient-to-r text-transparent from-[rgb(53,70,255)] via-[#5aa6f8] to-blue-700 bg-clip-text">insight</span> at one place!</h1>
     <AnimatedBeamMultipleInput />
 </div>
@@ -93,18 +91,6 @@
    <Team/>
 </div>
 
-<div class="grid grid-cols-2 bg-slate-100 text-center text-lg border-2 border-t-gray-300 ">
-    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=datafloww.in@gmail.com">
-        <div class="flex flex-col items-center w-fit m-auto p-4 rounded-xl cursor-pointer hover:bg-slate-200">
-            <img use:lazyLoad={mail} class="w-6" alt="">
-            <div>Mail</div>
-        </div>
-    </a>
-
-    <a href="https://github.com/DataFloww">
-        <div class="flex flex-col items-center w-fit m-auto p-4 duration-200 rounded-xl cursor-pointer hover:bg-slate-200">
-            <img use:lazyLoad={github} alt="">
-            <div>Github</div>
-        </div>
-    </a>
+<div class="grid grid-cols-4 bg-slate-100 text-center text-lg border-2 border-t-gray-300">
+    <Social/>
 </div>
