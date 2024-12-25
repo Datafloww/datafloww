@@ -29,7 +29,7 @@
 </script>
 
 {#each socials as social}
-	<a href={social.href}>
+	<a href={social.href} target="_blank" rel="noopener noreferrer">
 		<div
 			class="m-auto flex w-fit cursor-pointer flex-col items-center rounded-xl p-4 hover:bg-slate-200"
 		>
