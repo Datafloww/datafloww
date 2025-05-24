@@ -85,11 +85,13 @@
 				>
 					Unlock growth with data-driven decisions and actionable insights.
 				</p>
-				<button
-					disabled
-					class="m-auto mt-10 w-fit animate-slidein500 rounded-full bg-blue-500 p-3 text-lg text-white duration-300 hover:px-4 hover:shadow-xl hover:shadow-blue-400 hover:duration-300 md:p-3 md:text-sm lg:mt-2 lg:text-base"
-					>Coming soon</button
-				>
+				<a href="https://dash.datafloww.me">
+					<button
+						disabled
+						class="m-auto mt-10 w-fit animate-slidein500 rounded-full bg-blue-500 p-3 text-lg text-white duration-300 hover:px-4 hover:shadow-xl hover:shadow-blue-400 hover:duration-300 md:p-3 md:text-sm lg:mt-2 lg:text-base"
+						>Get Started
+					</button>
+				</a>
 			</div>
 		</div>
 	</DotBackground>
