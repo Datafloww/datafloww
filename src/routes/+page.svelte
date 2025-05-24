@@ -87,8 +87,7 @@
 				</p>
 				<a href="https://dash.datafloww.me">
 					<button
-						disabled
-						class="m-auto mt-10 w-fit animate-slidein500 rounded-full bg-blue-500 p-3 text-lg text-white duration-300 hover:px-4 hover:shadow-xl hover:shadow-blue-400 hover:duration-300 md:p-3 md:text-sm lg:mt-2 lg:text-base"
+						class="m-auto mt-10 w-fit animate-slidein500 cursor-pointer rounded-full bg-blue-500 p-3 text-lg text-white duration-300 hover:px-4 hover:shadow-xl hover:shadow-blue-400 hover:duration-300 md:p-3 md:text-sm lg:mt-2 lg:text-base"
 						>Get Started
 					</button>
 				</a>
